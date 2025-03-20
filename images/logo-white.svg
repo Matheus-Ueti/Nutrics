@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Monograma -->
+    <g transform="translate(0, 5)">
+        <path d="M20 20L30 10L40 20L30 30L20 20Z" fill="white" fill-opacity="0.9"/>
+        <path d="M25 15L35 25L45 15L35 5L25 15Z" fill="white" fill-opacity="0.7"/>
+    </g>
+    <!-- Texto BRENDA -->
+    <text x="60" y="25" font-family="Montserrat" font-size="20" font-weight="500" fill="white" fill-opacity="0.9">BRENDA</text>
+    <!-- Texto ueti -->
+    <text x="130" y="25" font-family="Cormorant Garamond" font-size="22" font-style="italic" fill="white" fill-opacity="0.7">ueti</text>
+    <!-- Texto LIFE & HEALTH -->
+    <text x="60" y="40" font-family="Montserrat" font-size="10" letter-spacing="2" fill="white" fill-opacity="0.9">LIFE & HEALTH</text>
+</svg>
