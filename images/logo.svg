@@ -8,7 +8,7 @@
     <!-- Texto BRENDA -->
     <text x="60" y="25" font-family="Montserrat" font-size="20" font-weight="500" fill="#8B2131">BRENDA</text>
     <!-- Texto ueti -->
-    <text x="130" y="25" font-family="Cormorant Garamond" font-size="22" font-style="italic" fill="#C5A777">ueti</text>
+    <text x="145" y="25" font-family="Cormorant Garamond" font-size="22" font-style="italic" fill="#C5A777">ueti</text>
     <!-- Texto LIFE & HEALTH -->
-    <text x="60" y="40" font-family="Montserrat" font-size="10" letter-spacing="2" fill="#8B2131">LIFE & HEALTH</text>
+    <text x="60" y="40" font-family="Montserrat" font-size="10" letter-spacing="2" fill="#8B2131">LIFE  HEALTH</text>
 </svg> 

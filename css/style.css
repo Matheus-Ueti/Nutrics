@@ -259,6 +259,14 @@ section {
     overflow: hidden;
 }
 
+#contato {
+    background-color: var(--light-color);
+
+    & a {
+      color: #6E0101;  
+    }
+}
+
 section::before {
     content: '';
     position: absolute;
