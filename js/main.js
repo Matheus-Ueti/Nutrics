@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicializar AOS Animation com configurações mais suaves
+    // Inicializar AOS Animation com configurações otimizadas
     AOS.init({
-        duration: 1200,
-        easing: 'ease-in-out-cubic',
-        once: false,
-        mirror: true,
-        offset: 50
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+        offset: 100
     });
 
     // Navbar scroll effect aprimorado
@@ -73,17 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Parallax effect aprimorado
-    const parallaxElements = document.querySelectorAll('.parallax');
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        
-        parallaxElements.forEach(element => {
-            const speed = element.dataset.speed || 0.5;
-            const yPos = -(scrolled * speed);
-            element.style.transform = `translate3d(0, ${yPos}px, 0)`;
-        });
-    });
+    // Parallax removido para melhorar performance
 
     // Form animations
     const formControls = document.querySelectorAll('.form-control, .form-select');
@@ -112,37 +102,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animação especial para depoimentos
+    // Animação simplificada para depoimentos
     const testimonialCards = document.querySelectorAll('#depoimentos .card');
     testimonialCards.forEach((card, index) => {
         card.addEventListener('mouseenter', function() {
             const stars = this.querySelectorAll('.testimonial-stars i');
-            stars.forEach((star, starIndex) => {
-                setTimeout(() => {
-                    star.style.transform = 'scale(1.2) rotate(15deg)';
-                }, starIndex * 100);
+            stars.forEach(star => {
+                star.style.transform = 'scale(1.1)';
             });
         });
         
         card.addEventListener('mouseleave', function() {
             const stars = this.querySelectorAll('.testimonial-stars i');
             stars.forEach(star => {
-                star.style.transform = 'scale(1) rotate(0deg)';
+                star.style.transform = 'scale(1)';
             });
         });
     });
 
-    // Hover effects para cards
+    // Hover effects simplificados para cards
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.02)';
-            this.style.boxShadow = '0 15px 30px rgba(139, 33, 49, 0.1)';
+            this.style.transform = 'translateY(-5px)';
         });
         
         card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-            this.style.boxShadow = 'none';
+            this.style.transform = 'translateY(0)';
         });
     });
 });
