@@ -5,25 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brenda Ueti - Life & Health</title>
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- SweetAlert2 -->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#inicio">
@@ -42,7 +35,7 @@
                         <a class="nav-link" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#agendamento">Agendamento</a>
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
@@ -51,8 +44,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <section id="inicio" class="hero-section">
         <div class="container">
             <div class="row justify-content-center text-center">
@@ -64,8 +55,8 @@
                         <h1>Brenda Ueti</h1>
                         <h2 class="subtitle">Life & Health</h2>
                         <p class="lead">A harmonia perfeita entre saúde e estética</p>
-                        <a href="#agendamento" class="btn btn-primary">
-                            Agende sua Consulta
+                        <a href="#contato" class="btn btn-primary">
+                            Entre em Contato
                         </a>
                     </div>
                 </div>
@@ -73,37 +64,32 @@
         </div>
     </section>
 
-    <!-- Sobre Section -->
     <section id="sobre" class="bg-primary">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6" data-aos="fade-right">
                     <h2>Sobre</h2>
-                    <p class="lead mb-5">Médica Preventivista dedicada à harmonia entre saúde e estética, oferecendo
+                    <p class="lead mb-4">Médica Preventivista dedicada à harmonia entre saúde e estética, oferecendo
                         tratamentos personalizados e resultados duradouros.</p>
-                    <div class="features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Medicina Preventiva</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Tratamentos Estéticos</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Acompanhamento Personalizado</span>
-                        </div>
+                    
+                    <div class="about-description mb-4">
+                        <p>Com mais de 8 anos de experiência na área da saúde, a Dra. Brenda Ueti é especialista em Medicina Preventiva e Estética. Formada pela Universidade Federal de Mato Grosso do Sul (UFMS), possui pós-graduação em Nutrologia e Medicina Estética.</p>
+                        
+                        <p>Sua abordagem integrada combina conhecimentos científicos avançados com técnicas inovadoras, sempre priorizando a segurança e o bem-estar de seus pacientes. Acredita que a verdadeira beleza nasce do equilíbrio entre saúde física e mental.</p>
                     </div>
+                    
+
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <img src="images/about-image.jpg" alt="Sobre" class="img-fluid">
+                    <div class="doctor-photo-container">
+                        <div class="doctor-photo-placeholder">
+                            <img src="images/doctor-placeholder.svg" alt="Placeholder para foto da Dra. Brenda Ueti" class="placeholder-image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Serviços Section -->
     <section id="servicos">
         <div class="container">
             <h2>Nossos Serviços</h2>
@@ -137,50 +123,58 @@
         </div>
     </section>
 
-    <!-- Agendamento Section -->
-    <section id="agendamento">
+    <section id="depoimentos">
         <div class="container">
-            <h2>Agende sua Consulta</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form id="appointment-form" data-aos="fade-up">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="form-control" placeholder="Nome completo" required>
+            <h2>Depoimentos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="email" class="form-control" placeholder="E-mail" required>
+                            <p class="testimonial-text">"Excelente profissional! O tratamento foi personalizado e os resultados superaram minhas expectativas. Recomendo para todos!"</p>
+                            <h6 class="testimonial-name">- Maria Silva</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
+                            <p class="testimonial-text">"A Dra. Brenda é muito atenciosa e profissional. Me senti confiante durante todo o processo. Resultados incríveis!"</p>
+                            <h6 class="testimonial-name">- Ana Paula</h6>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <input type="tel" class="form-control" placeholder="Telefone" required>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <select class="form-select" required>
-                                    <option value="" selected>Selecione o serviço</option>
-                                    <option value="sculpt">Sculpt</option>
-                                    <option value="balance">Balance</option>
-                                    <option value="slim">Slim</option>
-                                </select>
-                            </div>
+                            <p class="testimonial-text">"Abordagem holística incrível! Não só melhorei minha aparência, mas também minha saúde geral. Muito satisfeita!"</p>
+                            <h6 class="testimonial-name">- Carla Santos</h6>
                         </div>
-                        <div class="mb-4">
-                            <input type="date" class="form-control" required>
-                        </div>
-                        <div class="mb-4">
-                            <textarea class="form-control" rows="3" placeholder="Mensagem (opcional)"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Agendar Consulta
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contato Section -->
     <section id="contato">
         <div class="container">
             <h2>Contato</h2>
@@ -212,19 +206,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p class="mb-0">&copy; 2025 Brenda Ueti. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Botão WhatsApp Flutuante -->
     <a href="https://wa.me/5567996273004" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

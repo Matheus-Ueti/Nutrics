@@ -112,41 +112,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Formulário de agendamento aprimorado
-    const appointmentForm = document.getElementById('appointment-form');
-    if (appointmentForm) {
-        appointmentForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Animação do botão
-            const submitButton = this.querySelector('button[type="submit"]');
-            submitButton.style.width = submitButton.offsetWidth + 'px';
-            const originalText = submitButton.innerHTML;
-            
-            submitButton.innerHTML = '<div class="spinner-grow spinner-grow-sm" role="status"></div>';
-            submitButton.disabled = true;
-
-            // Simular envio com animação
-            setTimeout(() => {
-                Swal.fire({
-                    title: 'Agendamento Realizado!',
-                    text: 'Entraremos em contato em breve para confirmar sua consulta.',
-                    icon: 'success',
-                    confirmButtonColor: '#BEA282',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                });
-
-                this.reset();
-                submitButton.innerHTML = originalText;
-                submitButton.disabled = false;
-            }, 1500);
+    // Animação especial para depoimentos
+    const testimonialCards = document.querySelectorAll('#depoimentos .card');
+    testimonialCards.forEach((card, index) => {
+        card.addEventListener('mouseenter', function() {
+            const stars = this.querySelectorAll('.testimonial-stars i');
+            stars.forEach((star, starIndex) => {
+                setTimeout(() => {
+                    star.style.transform = 'scale(1.2) rotate(15deg)';
+                }, starIndex * 100);
+            });
         });
-    }
+        
+        card.addEventListener('mouseleave', function() {
+            const stars = this.querySelectorAll('.testimonial-stars i');
+            stars.forEach(star => {
+                star.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+    });
 
     // Hover effects para cards
     const cards = document.querySelectorAll('.card');
